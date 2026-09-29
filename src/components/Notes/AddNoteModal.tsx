@@ -8,7 +8,7 @@ const AddNoteModal:
         title: string,
         setTitle: (title: string) => void,
         edit?: boolean
-    }> = ({ open, onClose, handleSubmit, title, setTitle, edit = false }) => {
+    }> = ({ open: _open, onClose, handleSubmit, title, setTitle, edit = false }) => {
         return (
             <div onClick={() => onClose()} className="flex items-center justify-center w-full h-full fixed backdrop-blur-xs top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                 <div onClick={(e) => e.stopPropagation()} className="flex flex-col bg-black/70 border border-white/20 p-5 rounded-xl">

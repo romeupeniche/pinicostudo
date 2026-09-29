@@ -2,7 +2,7 @@ import { useState } from "react";
 import AddIcon from "../icons/AddIcon";
 
 const Notes: React.FC = () => {
-    const [modalOpen, setModalOpen] = useState<boolean>(false);
+    const [_modal, setModalOpen] = useState<boolean>(false);
 
     return (
         <section className="flex flex-col items-center justify-between space-y-2">

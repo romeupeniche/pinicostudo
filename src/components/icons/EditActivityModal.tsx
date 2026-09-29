@@ -30,8 +30,8 @@ const EditActivityModal: React.FC<{ open: boolean, onClose: () => void, activity
 
     const color = course.subjects.find((subject) => subject.code === activity.subject_code)?.color;
 
-    const openingDate = dateFormatter(activity.opening_date);
-    const closingDate = dateFormatter(activity.closing_date);
+    // const openingDate = dateFormatter(activity.opening_date);
+    // const closingDate = dateFormatter(activity.closing_date);
 
     return (
         <div onClick={() => onClose()} className="flex items-center justify-center w-full h-full fixed backdrop-blur-xs top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
